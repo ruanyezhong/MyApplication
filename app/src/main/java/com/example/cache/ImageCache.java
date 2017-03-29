@@ -65,7 +65,7 @@ public class ImageCache {
 
     }
 
-    class BitmapWorkerTask extends AsyncTask<String, Integer, Bitmap> {
+    private class BitmapWorkerTask extends AsyncTask<String, Integer, Bitmap> {
         private String imageUrl;
 
         @Override
@@ -95,7 +95,7 @@ public class ImageCache {
             conn = (HttpURLConnection) url.openConnection();
             conn.setConnectTimeout(5 * 1000);
             conn.setReadTimeout(10 * 1000);
-           // conn.setDoInput(true);
+            // conn.setDoInput(true);
             bitmap = BitmapFactory.decodeStream(conn.getInputStream());
 
         } catch (Exception e) {

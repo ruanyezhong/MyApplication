@@ -3,7 +3,7 @@
     package="com.example.administrator.myapplication">
 
     <permission android:name="android.permission.INTERNET" />
-    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name="com.example.service.MyService" />
     </application>
 
 </manifest>
